@@ -31,13 +31,11 @@ function update_game(button){
       board = -1;
    }
    player = player%2 + 1;
-   var gamestate = check_game();
-   if(gamestate == 1){
+
+   if(check_board(board_status, 1) == 1){
       document.getElementById("title").innerHTML = "Game Over! Player 1 Wins!"
-   }else if(gamestate == 2){
+   }else if(check_board(board_status, 2) == 2){
       document.getElementById("title").innerHTML = "Game Over! Player 2 Wins!"
-   }else if(gamestate == -1){
-      document.getElementById("title").innerHTML = "Game Over! Draw!"
    }
    
 }
@@ -54,39 +52,6 @@ function check_board(board, p){
       if(match){
          return p;
       }
-   }
-   return 0
-}
-/*Checks the larger game to see if either player has won*/
-function check_game(){
-   /*Check horizontal*/
-   for(i = 0;i<9;i+=3){
-      if(board_status[i] != 0 && (board_status[i] == board_status[i+1] && board_status[i+1] == board_status[i+2])){
-         return board_status[i]
-      }
-   }
-   /*Check Vertical*/
-   for(i = 0;i<3;i++){
-      if(board_status[i] != 0 && (board_status[i] == board_status[i+3] && board_status[i+3] == board_status[i+6])){
-         return board_status[i]
-      }
-   }
-   /*Check Diagonal*/
-   if(board_status[i] != 0 && (board_status[i] == board_status[i+4] && board_status[i+4] == board_status[i+8])){
-      return board_status[i]
-   }
-   if(board_status[i+2] != 0 && (board_status[i+2] == board_status[i+4] && board_status[i+4] == board_status[i+6])){
-      return board_status[i+2]
-   }
-   var sum = 0
-   /*Check Draw*/
-   for(i = 0;i<9;i++){
-      if(board_status[i] != 0){
-         sum++;
-      }
-   }
-   if(sum == 9){
-      return -1
    }
    return 0
 }
