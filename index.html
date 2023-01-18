@@ -1,142 +1,127 @@
 <!DOCTYPE html>
 <html>
-    <style>
-        .button {
-            background-color: #000000; 
-            height: 50px;
-            width: 50px;
-            border: 0px;
-        }
-        .grid-container {
-            display: inline-grid;
-            grid-template-columns: auto auto auto;
-        }
-        .grid-item{
-            border: 1px;
-            padding: 10px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
     <script src="main.js"></script>
     <head>
         <h1 id = "title">Welcome to Ultimate Tic Tac Toe!</h1>
     </head>
     <div class = grid-container id = board>
     <div class = grid-item id = topleft>
-        <button id = "0" class = "button" onclick = change_color(this)></button>
-        <button id = "1" class = "button" onclick = change_color(this)></button>
-        <button id = "2" class = "button" onclick = change_color(this)></button>
+        <button id = "0" class = "button" onclick = update_game(this)></button>
+        <button id = "1" class = "button" onclick = update_game(this)></button>
+        <button id = "2" class = "button" onclick = update_game(this)></button>
     </br>
-        <button id = "3" class = "button" onclick = change_color(this)></button>
-        <button id = "4" class = "button" onclick = change_color(this)></button>
-        <button id = "5" class = "button" onclick = change_color(this)></button>
+        <button id = "3" class = "button" onclick = update_game(this)></button>
+        <button id = "4" class = "button" onclick = update_game(this)></button>
+        <button id = "5" class = "button" onclick = update_game(this)></button>
     </br>
-        <button id = "6" class = "button" onclick = change_color(this)></button>
-        <button id = "7" class = "button" onclick = change_color(this)></button>
-        <button id = "8" class = "button" onclick = change_color(this)></button>
+        <button id = "6" class = "button" onclick = update_game(this)></button>
+        <button id = "7" class = "button" onclick = update_game(this)></button>
+        <button id = "8" class = "button" onclick = update_game(this)></button>
     </div>
     <div class = grid-item id = topmiddle>
-        <button id = "9" class = "button" onclick = change_color(this)></button>
-        <button id = "10" class = "button" onclick = change_color(this)></button>
-        <button id = "11" class = "button" onclick = change_color(this)></button>
+        <button id = "9" class = "button" onclick = update_game(this)></button>
+        <button id = "10" class = "button" onclick = update_game(this)></button>
+        <button id = "11" class = "button" onclick = update_game(this)></button>
     </br>
-        <button id = "12" class = "button" onclick = change_color(this)></button>
-        <button id = "13" class = "button" onclick = change_color(this)></button>
-        <button id = "14" class = "button" onclick = change_color(this)></button>
+        <button id = "12" class = "button" onclick = update_game(this)></button>
+        <button id = "13" class = "button" onclick = update_game(this)></button>
+        <button id = "14" class = "button" onclick = update_game(this)></button>
     </br>
-        <button id = "15" class = "button" onclick = change_color(this)></button>
-        <button id = "16" class = "button" onclick = change_color(this)></button>
-        <button id = "17" class = "button" onclick = change_color(this)></button>
+        <button id = "15" class = "button" onclick = update_game(this)></button>
+        <button id = "16" class = "button" onclick = update_game(this)></button>
+        <button id = "17" class = "button" onclick = update_game(this)></button>
     </div>
     <div class = grid-item id = topright>
-        <button id = "18" class = "button" onclick = change_color(this)></button>
-        <button id = "19" class = "button" onclick = change_color(this)></button>
-        <button id = "20" class = "button" onclick = change_color(this)></button>
+        <button id = "18" class = "button" onclick = update_game(this)></button>
+        <button id = "19" class = "button" onclick = update_game(this)></button>
+        <button id = "20" class = "button" onclick = update_game(this)></button>
     </br>
-        <button id = "21" class = "button" onclick = change_color(this)></button>
-        <button id = "22" class = "button" onclick = change_color(this)></button>
-        <button id = "23" class = "button" onclick = change_color(this)></button>
+        <button id = "21" class = "button" onclick = update_game(this)></button>
+        <button id = "22" class = "button" onclick = update_game(this)></button>
+        <button id = "23" class = "button" onclick = update_game(this)></button>
     </br>
-        <button id = "24" class = "button" onclick = change_color(this)></button>
-        <button id = "25" class = "button" onclick = change_color(this)></button>
-        <button id = "26" class = "button" onclick = change_color(this)></button>
+        <button id = "24" class = "button" onclick = update_game(this)></button>
+        <button id = "25" class = "button" onclick = update_game(this)></button>
+        <button id = "26" class = "button" onclick = update_game(this)></button>
     </div>
     <div class = grid-item id = middleleft>
-        <button id = "27" class = "button" onclick = change_color(this)></button>
-        <button id = "28" class = "button" onclick = change_color(this)></button>
-        <button id = "29" class = "button" onclick = change_color(this)></button>
+        <button id = "27" class = "button" onclick = update_game(this)></button>
+        <button id = "28" class = "button" onclick = update_game(this)></button>
+        <button id = "29" class = "button" onclick = update_game(this)></button>
     </br>
-        <button id = "30" class = "button" onclick = change_color(this)></button>
-        <button id = "31" class = "button" onclick = change_color(this)></button>
-        <button id = "32" class = "button" onclick = change_color(this)></button>
+        <button id = "30" class = "button" onclick = update_game(this)></button>
+        <button id = "31" class = "button" onclick = update_game(this)></button>
+        <button id = "32" class = "button" onclick = update_game(this)></button>
     </br>
-        <button id = "33" class = "button" onclick = change_color(this)></button>
-        <button id = "34" class = "button" onclick = change_color(this)></button>
-        <button id = "35" class = "button" onclick = change_color(this)></button>
+        <button id = "33" class = "button" onclick = update_game(this)></button>
+        <button id = "34" class = "button" onclick = update_game(this)></button>
+        <button id = "35" class = "button" onclick = update_game(this)></button>
     </div>
     <div class = grid-item id = middlemiddle>
-        <button id = "36" class = "button" onclick = change_color(this)></button>
-        <button id = "37" class = "button" onclick = change_color(this)></button>
-        <button id = "38" class = "button" onclick = change_color(this)></button>
+        <button id = "36" class = "button" onclick = update_game(this)></button>
+        <button id = "37" class = "button" onclick = update_game(this)></button>
+        <button id = "38" class = "button" onclick = update_game(this)></button>
     </br>
-        <button id = "39" class = "button" onclick = change_color(this)></button>
-        <button id = "40" class = "button" onclick = change_color(this)></button>
-        <button id = "41" class = "button" onclick = change_color(this)></button>
+        <button id = "39" class = "button" onclick = update_game(this)></button>
+        <button id = "40" class = "button" onclick = update_game(this)></button>
+        <button id = "41" class = "button" onclick = update_game(this)></button>
     </br>
-        <button id = "42" class = "button" onclick = change_color(this)></button>
-        <button id = "43" class = "button" onclick = change_color(this)></button>
-        <button id = "44" class = "button" onclick = change_color(this)></button>
+        <button id = "42" class = "button" onclick = update_game(this)></button>
+        <button id = "43" class = "button" onclick = update_game(this)></button>
+        <button id = "44" class = "button" onclick = update_game(this)></button>
     </div>
     <div class = grid-item id = middleright>
-        <button id = "45" class = "button" onclick = change_color(this)></button>
-        <button id = "46" class = "button" onclick = change_color(this)></button>
-        <button id = "47" class = "button" onclick = change_color(this)></button>
+        <button id = "45" class = "button" onclick = update_game(this)></button>
+        <button id = "46" class = "button" onclick = update_game(this)></button>
+        <button id = "47" class = "button" onclick = update_game(this)></button>
     </br>
-        <button id = "48" class = "button" onclick = change_color(this)></button>
-        <button id = "49" class = "button" onclick = change_color(this)></button>
-        <button id = "50" class = "button" onclick = change_color(this)></button>
+        <button id = "48" class = "button" onclick = update_game(this)></button>
+        <button id = "49" class = "button" onclick = update_game(this)></button>
+        <button id = "50" class = "button" onclick = update_game(this)></button>
     </br>
-        <button id = "51" class = "button" onclick = change_color(this)></button>
-        <button id = "52" class = "button" onclick = change_color(this)></button>
-        <button id = "53" class = "button" onclick = change_color(this)></button>
+        <button id = "51" class = "button" onclick = update_game(this)></button>
+        <button id = "52" class = "button" onclick = update_game(this)></button>
+        <button id = "53" class = "button" onclick = update_game(this)></button>
     </div>
     <div class = grid-item id = bottomleft>
-        <button id = "54" class = "button" onclick = change_color(this)></button>
-        <button id = "55" class = "button" onclick = change_color(this)></button>
-        <button id = "56" class = "button" onclick = change_color(this)></button>
+        <button id = "54" class = "button" onclick = update_game(this)></button>
+        <button id = "55" class = "button" onclick = update_game(this)></button>
+        <button id = "56" class = "button" onclick = update_game(this)></button>
     </br>
-        <button id = "57" class = "button" onclick = change_color(this)></button>
-        <button id = "58" class = "button" onclick = change_color(this)></button>
-        <button id = "59" class = "button" onclick = change_color(this)></button>
+        <button id = "57" class = "button" onclick = update_game(this)></button>
+        <button id = "58" class = "button" onclick = update_game(this)></button>
+        <button id = "59" class = "button" onclick = update_game(this)></button>
     </br>
-        <button id = "60" class = "button" onclick = change_color(this)></button>
-        <button id = "61" class = "button" onclick = change_color(this)></button>
-        <button id = "62" class = "button" onclick = change_color(this)></button>
+        <button id = "60" class = "button" onclick = update_game(this)></button>
+        <button id = "61" class = "button" onclick = update_game(this)></button>
+        <button id = "62" class = "button" onclick = update_game(this)></button>
     </div>
     <div class = grid-item id = bottommiddle>
-        <button id = "63" class = "button" onclick = change_color(this)></button>
-        <button id = "64" class = "button" onclick = change_color(this)></button>
-        <button id = "65" class = "button" onclick = change_color(this)></button>
+        <button id = "63" class = "button" onclick = update_game(this)></button>
+        <button id = "64" class = "button" onclick = update_game(this)></button>
+        <button id = "65" class = "button" onclick = update_game(this)></button>
     </br>
-        <button id = "66" class = "button" onclick = change_color(this)></button>
-        <button id = "67" class = "button" onclick = change_color(this)></button>
-        <button id = "68" class = "button" onclick = change_color(this)></button>
+        <button id = "66" class = "button" onclick = update_game(this)></button>
+        <button id = "67" class = "button" onclick = update_game(this)></button>
+        <button id = "68" class = "button" onclick = update_game(this)></button>
     </br>
-        <button id = "69" class = "button" onclick = change_color(this)></button>
-        <button id = "70" class = "button" onclick = change_color(this)></button>
-        <button id = "71" class = "button" onclick = change_color(this)></button>
+        <button id = "69" class = "button" onclick = update_game(this)></button>
+        <button id = "70" class = "button" onclick = update_game(this)></button>
+        <button id = "71" class = "button" onclick = update_game(this)></button>
     </div>
     <div class = grid-item id = bottomleft>
-        <button id = "72" class = "button" onclick = change_color(this)></button>
-        <button id = "73" class = "button" onclick = change_color(this)></button>
-        <button id = "74" class = "button" onclick = change_color(this)></button>
+        <button id = "72" class = "button" onclick = update_game(this)></button>
+        <button id = "73" class = "button" onclick = update_game(this)></button>
+        <button id = "74" class = "button" onclick = update_game(this)></button>
     </br>
-        <button id = "75" class = "button" onclick = change_color(this)></button>
-        <button id = "76" class = "button" onclick = change_color(this)></button>
-        <button id = "77" class = "button" onclick = change_color(this)></button>
+        <button id = "75" class = "button" onclick = update_game(this)></button>
+        <button id = "76" class = "button" onclick = update_game(this)></button>
+        <button id = "77" class = "button" onclick = update_game(this)></button>
     </br>
-        <button id = "78" class = "button" onclick = change_color(this)></button>
-        <button id = "79" class = "button" onclick = change_color(this)></button>
-        <button id = "80" class = "button" onclick = change_color(this)></button>
+        <button id = "78" class = "button" onclick = update_game(this)></button>
+        <button id = "79" class = "button" onclick = update_game(this)></button>
+        <button id = "80" class = "button" onclick = update_game(this)></button>
     </div>
     </div>
     </html>
